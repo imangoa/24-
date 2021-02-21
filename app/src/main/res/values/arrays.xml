@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gLevel">
+        <item>初级</item>
+        <item>高级</item>
+    </string-array>
+    <string-array name="gModel">
+        <item>闯关模式</item>
+        <item>计时模式</item>
+    </string-array>
+    <string-array name="timing">
+        <item>1min</item>
+        <item>3min</item>
+        <item>5min</item>
+        <item>自定义</item>
+    </string-array>
+</resources>
