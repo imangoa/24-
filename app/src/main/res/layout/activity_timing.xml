@@ -10,6 +10,15 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示:0"
+            android:textColor="#F6F5F5"
+            android:background="#03A9F4"
+            android:onClick="hints"
+            />
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -30,7 +39,7 @@
                 android:id="@+id/texts"
                 android:textColor="#000000"
                 android:textSize="18dp"
-                android:focusable="true" />t'
+                android:focusable="true" />
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="20dp"

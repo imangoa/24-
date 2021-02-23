@@ -20,22 +20,27 @@
         >
 
         <TextView
+            android:id="@+id/chuji"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:text="初级"
+            android:onClick="click_chuji"
             android:background="#A6ADD5"
             android:gravity="center_horizontal"
             android:textSize="30dp" />
 
         <TextView
+            android:id="@+id/gaoji"
+            android:onClick="click_gaoji"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="30dp"
             android:gravity="center_horizontal"
             android:text="高级"
+            android:background="@color/white"
             />
 
     </LinearLayout>
@@ -44,15 +49,20 @@
         android:layout_height="wrap_content"
         >
         <TextView
+            android:id="@+id/jishi"
+            android:onClick="click_jishi"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="计时模式"
             android:textSize="30dp"
+            android:background="@color/white"
             android:layout_gravity="center"
             />
         <TextView
+            android:id="@+id/chuangguan"
+            android:onClick="click_chuangguan"
             android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,40 +73,58 @@
             />
     </LinearLayout>
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="玩家名"
+            android:layout_weight="1"
             android:textSize="20dp"/>
         <TextView
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="正确数"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:text="正确个数"
+            android:layout_weight="1"
             android:textSize="20dp"/>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:gravity="center"
             android:text="用时"
-            android:textSize="20dp"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="效率"
-            android:layout_marginLeft="20dp"
-            android:textSize="20dp"/>
+            android:textSize="20dp" />
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:gravity="center"
             android:text="时间"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:textSize="20dp"/>
 
     </LinearLayout>
+
+    <ListView
+        android:id="@+id/Student_ALL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
 </LinearLayout>

@@ -44,6 +44,7 @@ public class TimingActivity extends AppCompatActivity implements View.OnClickLis
     EditText text;
     TextView texts;
     TextView grade;
+    int ktime;
     Timer timer;
     int mgrade=0;
     String tLevel="";
@@ -53,6 +54,7 @@ public class TimingActivity extends AppCompatActivity implements View.OnClickLis
     final static String[] Image_path={"a1","a2","a3","a4","a5","a6","a7","a8","a9","a10","a11","a12","a13"};
     int[] flags =new int[10];
     int i=0;
+    int hint_count;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +76,7 @@ public class TimingActivity extends AppCompatActivity implements View.OnClickLis
         tPlayer=bundle.getString("player");
         System.out.println(tPlayer);
         i=Integer.parseInt(tTimer);
+        ktime=i;
         init();
 //        获取开始组件
         timer=new Timer();
@@ -107,13 +110,15 @@ public class TimingActivity extends AppCompatActivity implements View.OnClickLis
             else if (msg.what==0){
                 timer.cancel();
                 Bundle bundle = new Bundle();
-                bundle.putCharSequence("time",tTimer);
+                ktime+=hint_count*30;
+                bundle.putCharSequence("time",ktime+"");
                 bundle.putCharSequence("grade", grade.getText().toString());
+                bundle.putCharSequence("player",tPlayer);
+                bundle.putCharSequence("level",tLevel);
+                bundle.putCharSequence("mode","计时");
                 Intent intent = new Intent(TimingActivity.this, GradeActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
-
-
             }
         }
     };
@@ -180,6 +185,42 @@ public class TimingActivity extends AppCompatActivity implements View.OnClickLis
 
     }
 
+
+    public void hints(View view)
+    {
+        TextView hint=findViewById(R.id.hint);
+        if (tLevel.equals("高级"))
+        {
+            String s=game.data.get(0);
+            StringBuilder out= new StringBuilder();
+            char[] exp = s.toCharArray();
+            for (int k=0;k<exp.length;k++)
+            {
+
+                if (Character.isDigit(exp[k]))
+                {
+                    int temp = Integer.parseInt(String.valueOf(exp[k]));
+                    temp+=game.extra[0];
+                    out.append(temp+"");
+                }
+                else {
+                    out.append(exp[k]);
+                }
+            }
+            text.setText(out);
+            txt=game.data.get(0);
+            hint_count++;
+            hint.setText("提示："+hint_count);
+            System.out.println(out);
+        }
+        else{
+            hint_count++;
+            txt=game.data.get(0);
+            text.setText(game.data.get(0));
+            hint.setText("提示："+hint_count);
+
+        }
+    }
 
     @SuppressLint("NonConstantResourceId")
     @Override

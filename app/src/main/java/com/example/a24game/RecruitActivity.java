@@ -167,6 +167,7 @@ public class RecruitActivity extends AppCompatActivity  implements View.OnClickL
     }
 
 
+
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
@@ -236,6 +237,7 @@ public class RecruitActivity extends AppCompatActivity  implements View.OnClickL
             text.setText(s + Bnum10.getText().toString());
             txt+=Bnum10.getText().toString();
         }
+
         else if (v.getId() == R.id.submit)
         {
 //            System.out.println(txt);
@@ -263,6 +265,9 @@ public class RecruitActivity extends AppCompatActivity  implements View.OnClickL
                 Bundle bundle = new Bundle();
                 bundle.putCharSequence("time", time+"");
                 bundle.putCharSequence("grade", grade.getText().toString());
+                bundle.putCharSequence("player",tPlayer);
+                bundle.putCharSequence("level",tLevel);
+                bundle.putCharSequence("mode","闯关");
                 Intent intent = new Intent(RecruitActivity.this, GradeActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);

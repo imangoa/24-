@@ -67,12 +67,20 @@
             />
 
     </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="游戏中，可以点击提示按钮来获得正确答案，但是在结算中，会增加30s的时间"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
     <Button
         android:id="@+id/init_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="60dp"
         android:text="开始"
         android:textSize="40dp"
         app:backgroundTint="#00BCD4" />

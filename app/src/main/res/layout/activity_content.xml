@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:text=""
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:textSize="16dp"
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:gravity="center"
+        android:layout_weight="2"
+        android:id="@+id/tv6"
+        android:textSize="9dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
