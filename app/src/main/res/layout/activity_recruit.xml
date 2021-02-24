@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:padding="10dp">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -17,6 +17,7 @@ android:padding="10dp">
         android:text="提示:0"
         android:textColor="#F6F5F5"
         android:background="#03A9F4"
+        android:textSize="20dp"
         android:onClick="hint"
         />
     <LinearLayout
@@ -176,25 +177,25 @@ android:padding="10dp">
 
         <Button
             android:id="@+id/btn1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_margin="6dp"
             android:background="@drawable/button"
             android:text="+"
-            android:layout_margin="6dp"
             android:textSize="20dp" />
 
         <Button
             android:id="@+id/btn2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/button"
             android:text="-"
             android:layout_margin="6dp"
             android:textSize="20dp" />
         <Button
             android:id="@+id/btn3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/button"
             android:text="*"
             android:layout_margin="6dp"
@@ -202,8 +203,8 @@ android:padding="10dp">
             android:textSize="20dp" />
         <Button
             android:id="@+id/btn4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/button"
             android:text="/"
             android:layout_margin="6dp"
@@ -211,8 +212,8 @@ android:padding="10dp">
             android:textSize="20dp" />
         <Button
             android:id="@+id/btn5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/button"
             android:text="("
             android:layout_margin="6dp"
@@ -220,8 +221,8 @@ android:padding="10dp">
             android:textSize="20dp" />
         <Button
             android:id="@+id/btn6"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
             android:background="@drawable/button"
             android:text=")"
             android:layout_margin="6dp"

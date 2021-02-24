@@ -11,10 +11,12 @@
         android:layout_weight="2"
         android:text=""
         android:textSize="16dp"
+        android:textColor="@color/black"
         android:gravity="center"
         android:layout_height="match_parent"/>
     <TextView
         android:textSize="16dp"
+        android:textColor="@color/black"
         android:gravity="center"
         android:layout_weight="2"
         android:id="@+id/tv2"
@@ -23,6 +25,7 @@
     <TextView
         android:textSize="16dp"
         android:gravity="center"
+        android:textColor="@color/black"
         android:layout_weight="2"
         android:id="@+id/tv3"
         android:layout_width="match_parent"
@@ -31,6 +34,7 @@
         android:textSize="16dp"
         android:gravity="center"
         android:layout_weight="2"
+        android:textColor="@color/black"
         android:id="@+id/tv4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
@@ -39,9 +43,11 @@
         android:gravity="center"
         android:layout_weight="2"
         android:id="@+id/tv5"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <TextView
+        android:textColor="@color/black"
         android:gravity="center"
         android:layout_weight="2"
         android:id="@+id/tv6"

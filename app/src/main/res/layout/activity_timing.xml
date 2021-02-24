@@ -15,6 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="提示:0"
+            android:textSize="20dp"
             android:textColor="#F6F5F5"
             android:background="#03A9F4"
             android:onClick="hints"

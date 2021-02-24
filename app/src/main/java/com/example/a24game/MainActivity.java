@@ -3,6 +3,7 @@ package com.example.a24game;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -43,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Typeface face = Typeface.createFromAsset (  getAssets() , "fonts/华文行楷.ttf" );
+        game_start.setTypeface (face);
+        rank_list.setTypeface (face);
         music_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -19,7 +19,7 @@
         android:layout_marginBottom="60dp"
         android:text="24点"
         android:textSize="70dp"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/teal_700"
         />
     <Button
         android:id="@+id/game_start"
